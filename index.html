@@ -1,0 +1,33 @@
+<html>
+    
+    <body>
+    <style>
+        .rw-conversation-container .rw-header{background-color: #be615e;}
+        .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #4a58d6;}
+        .rw-launcher{background-color: #258299;}
+    </style>
+
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    initPayload:'/greet',
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: 'ChatBot',
+                    subtitle: 'Say hi and get started!'
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          </script>
+    </body>
+</html>
