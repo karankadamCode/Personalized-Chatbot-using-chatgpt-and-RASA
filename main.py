@@ -6,8 +6,8 @@ import openai
 #openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # key as string=
-# openai.api_key = os.getenv("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")
-openai.api_key = "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"
+# openai.api_key = os.getenv("")
+openai.api_key = ""
 
 
 # start_sequence = "Chatbot:"
