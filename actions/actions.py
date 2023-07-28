@@ -72,7 +72,7 @@ class ActionOwner(Action):
 
 # Chatgpt -->
 
-openai.api_key = "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"
+openai.api_key = ""
 
 def chatgpt_clone(prompt):
     response = openai.Completion.create(
